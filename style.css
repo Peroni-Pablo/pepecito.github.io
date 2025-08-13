@@ -1,49 +1,63 @@
-/* Estilos básicos del sitio */
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
-  line-height: 1.5;
-  background: #f7f7f7;
-  color: #222;
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    margin: 0px;
+    background-color: rgb(178, 178, 178)
+
 }
 
-.site-header {
-  background: #111;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+header{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 2rem;
+}
+header h1{
+    font-size: 46px;
+    text-align: center;
+}
+.box{
+    width: 400px;
+    margin: 20px auto;
 }
 
-.site-header h1 {
-  margin: 0.2rem 0;
-  font-size: 1.25rem;
+section article {
+    transition: box-shadow 0.3s ease;
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0rem;
+    cursor: pointer;
+    
 }
 
-.site-header nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 1rem;
+section article:hover {
+    box-shadow: 0.3rem 0.1rem 0.7rem rgba(0,0,0, 0.3);
 }
 
-.container {
-  max-width: 920px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-  padding: 2rem;
+section article h2,section article p {
+    margin: 1rem;
 }
 
-h2 { margin-top: 0; }
+footer{
+    background-color: rgb(49, 49, 49);
+    padding: 3rem;
+    color:white;
+}
+footer section{
+    float: right;
+}
 
-.site-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: #666;
+footer a{
+    color:white;
+}
+
+footer a:hover{
+    transition: color 0.3s ease;
+    color:aquamarine;
+
+}
+
+#volver{
+    padding-right: 20px;
 }
